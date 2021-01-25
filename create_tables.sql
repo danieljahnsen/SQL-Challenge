@@ -13,11 +13,11 @@ CREATE TABLE employees(
 	emp_no VARCHAR(20) PRIMARY KEY,
 	emp_title_id VARCHAR(10),
 	FOREIGN KEY (emp_title_id) REFERENCES titles(title_id),
-	birth_date VARCHAR(20),
+	birth_date DATE,
 	first_name VARCHAR(30),
 	last_name VARCHAR(30),
 	sex VARCHAR(10),
-	hire_date VARCHAR(20)
+	hire_date DATE
 );
 
 CREATE TABLE dept_emp(
